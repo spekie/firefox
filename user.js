@@ -20,7 +20,7 @@
  * below do, to somewhat document if they are beneficial to security.
  */
 
-/* Telemetry */
+/* Disable Telemetry and Annoyances */
 user_pref("browser.aboutwelcome.enabled", false);
 user_pref("datareporting.usage.uploadEnabled", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
@@ -41,6 +41,7 @@ user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
 user_pref("toolkit.telemetry.server", "");
+user_pref("browser.download.enableDeletePrivate", false);
 user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
@@ -67,15 +68,13 @@ user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("media.gmp-widevinecdm.enabled", false);
 user_pref("media.gmp-widevinecdm.visible", false);
 
-/* HTTPS only */
+/* Privacy and Security enhancements */
 user_pref("dom.security.https_only_mode", true);
-
-/* Private browsing mode */
 user_pref("privacy.history.custom", true);
 user_pref("browser.privatebrowsing.autostart", true);
 user_pref("browser.contentblocking.category", "strict");
 
-/* Autofill passwords and others */
+/* Disable autofill passwords and related */
 user_pref("signon.rememberSignons", false);
 user_pref("signon.management.page.breach-alerts.enabled", false);
 user_pref("signon.generation.enabled", false);
@@ -85,7 +84,7 @@ user_pref("dom.forms.autocomplete.formautofill", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
 
-/* Safe Browsing */
+/* Disable Google Safe Browsing */
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
