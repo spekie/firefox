@@ -1,0 +1,12 @@
+A custom, private and secure user.js for Firefox.
+
+First run "clean.sh" in a shell like this:
+./clean.sh
+
+Then run "make.sh" in a shell like this:
+./make.sh
+
+After this, the user.js is installed, it is highly
+recommended to run clean once in a while to clear
+the cache or the presence of Firefox in the system
+for minimalism, privacy or just security purposes.
