@@ -41,6 +41,9 @@ user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
 user_pref("toolkit.telemetry.server", "");
+user_pref("toolkit.telemetry.coverage.opt-out", true);
+user_pref("toolkit.coverage.opt-out", true);
+user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("browser.download.enableDeletePrivate", false);
 user_pref("browser.search.serpEventTelemetryCategorization.enabled", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
@@ -63,12 +66,13 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.ml.enabled", false);
+user_pref("breakpad.reportURL", "");
+user_pref("browser.tabs.crashReporting.sendReport", false);
+user_pref("app.normandy.api_url", "");
 user_pref("identity.fxaccounts.enabled", false);
 user_pref("browser.preferences.moreFromMozilla", false);
-/* Removes Firefox labs (does not work)
-user_pref("browser.preferences.experimental.hidden", true);
-user_pref("browser.preferences.experimental", false);
-*/
+//user_pref("browser.preferences.experimental.hidden", true);
+//user_pref("browser.preferences.experimental", false);
 
 /* Disables the Widevine digital rights management (DRM) */
 user_pref("media.gmp-widevinecdm.enabled", false);
@@ -79,6 +83,8 @@ user_pref("dom.security.https_only_mode", true);
 user_pref("privacy.history.custom", true);
 user_pref("browser.privatebrowsing.autostart", true);
 user_pref("browser.contentblocking.category", "strict");
+user_pref("browser.contentblocking.database.enabled", false);
+user_pref("browser.tabs.crashReporting.sendReport", false);
 
 /* Disable autofill passwords and related */
 user_pref("signon.rememberSignons", false);
@@ -117,10 +123,8 @@ user_pref("browser.safebrowsing.provider.google5.reportMalwareMistakeURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
-/* Blank URLs for Google Safe Browsing (gets overriden)
-user_pref("browser.safebrowsing.provider.google.reportURL", "")
-user_pref("browser.safebrowsing.provider.google.reportPhishMistakeURL", "")
-user_pref("browser.safebrowsing.provider.google.reportMalwareMistakeURL", "")
-user_pref("browser.safebrowsing.provider.google.advisoryURL", "")
-user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
-*/
+//user_pref("browser.safebrowsing.provider.google.reportURL", "")
+//user_pref("browser.safebrowsing.provider.google.reportPhishMistakeURL", "")
+//user_pref("browser.safebrowsing.provider.google.reportMalwareMistakeURL", "")
+//user_pref("browser.safebrowsing.provider.google.advisoryURL", "")
+//user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
