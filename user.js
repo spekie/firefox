@@ -53,6 +53,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.showWeather", false);
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
+user_pref("browser.newtabpage.activity-stream.asrouter.providers.messaging-experiments", "null");
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
 user_pref("browser.urlbar.suggest.quicksuggest.all", false);
 user_pref("browser.urlbar.suggest.topsites", false);
@@ -61,8 +62,11 @@ user_pref("browser.urlbar.addons.featureGate", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.getAddons.cache.enabled", false);
+user_pref("extensions.ml.enabled", false);
 user_pref("identity.fxaccounts.enabled", false);
 user_pref("browser.preferences.moreFromMozilla", false);
+//user_pref("browser.preferences.experimental.hidden", true);
+//user_pref("browser.preferences.experimental", false);
 
 /* Disables the Widevine digital rights management (DRM) */
 user_pref("media.gmp-widevinecdm.enabled", false);
