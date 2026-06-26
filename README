@@ -1,7 +1,0 @@
-A custom, private and secure user.js for Firefox.
-
-First run "clean.sh" in a shell like this:
-./clean.sh
-
-Then run "make.sh" in a shell like this:
-./make.sh
