@@ -1,7 +1,7 @@
 #!/bin/sh
-rm -rfv "$XDG_CONFIG_HOME"/mozilla/firefox/*.default-release/*
-rm -rfv "$XDG_CONFIG_HOME"/mozilla/firefox/Crash\ Reports/
-rm -rfv "$XDG_CONFIG_HOME"/mozilla/firefox/Pending\ Pings/
-rm -rfv "$XDG_CONFIG_HOME"/mozilla/firefox/Profile\ Groups/
-cp -v "$XDG_CONFIG_HOME"/mozilla/firefox/*.default/times.json "$XDG_CONFIG_HOME"/mozilla/firefox/*.default-release/
+git clone https://github.com/arkenfox/user.js.git
+cp -v user-overrides.js "$XDG_CONFIG_HOME"/mozilla/firefox/*.default-release/
+cd user.js
+cp -v prefsCleaner.sh "$XDG_CONFIG_HOME"/mozilla/firefox/*.default-release/
+cp -v updater.sh "$XDG_CONFIG_HOME"/mozilla/firefox/*.default-release/
 cp -v user.js "$XDG_CONFIG_HOME"/mozilla/firefox/*.default-release/
